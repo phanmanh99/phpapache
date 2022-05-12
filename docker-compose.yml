@@ -8,6 +8,6 @@ services:
         depends_on:
             - db
         volumes:
-            - ./:/var/www/html/
+            - ./backend:/var/www/html/
         ports:
             - 8000:80
