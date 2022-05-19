@@ -5,8 +5,6 @@ services:
         build:
             context: ./
             dockerfile: Dockerfile
-        depends_on:
-            - db
         volumes:
             - ./backend:/var/www/html/
         ports:
