@@ -1,5 +1,8 @@
 version: '3.8'
 services:
+    php-apache-environment:
+        depends_on:
+            - db
     db:
         container_name: db
         image: amd64/mysql:5.7
